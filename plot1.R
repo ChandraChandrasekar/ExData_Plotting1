@@ -21,7 +21,7 @@ selectedData <- read.csv2.sql(file="household_power_consumption.txt", na.strings
 )
 
 # now plot graph
-png(file="plot1.png", height=480, width=480, units="px")
+png(file="plot1.png", height=480, width=480, units="px", bg="transparent")
 with(selectedData, hist(Global_active_power, col="red", 
                         xlab="Global Active Power (kilowatts)", ylab="Frequency", 
                         main="Global Active Power"))

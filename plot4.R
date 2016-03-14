@@ -36,7 +36,7 @@ convertedSelectedData <- tblSelectedData %>%
 
 
 # Now to get to the actual plots
-png(file="plot4.png", height=480, width=480, units="px")   # set up device and plot
+png(file="plot4.png", height=480, width=480, units="px", bg="transparent")   # set up device and plot
 par(mfrow = c(2,2), mar = c(4, 4, 2, 1), oma = c(0, 0, 0, 0)) #), height=480, width=480, units="px")  # plotting graphs by row, 2 x 2
 
 #row 1, col 1

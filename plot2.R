@@ -34,7 +34,7 @@ convertedSelectedData <- tblSelectedData %>%
         mutate(datetime=getDateTime(Date,Time)) %>%   # Add a new datetime column made froim Date, Time
         select(-Date, -Time)    # zap Date and Time columns now
 
-png(file="plot2.png", height=480, width=480, units="px")   # set up device and plot
+png(file="plot2.png", height=480, width=480, units="px", bg="transparent")   # set up device and plot
 
 with(convertedSelectedData, plot(datetime, Global_active_power, type="l",  
                                  xlab="", ylab="Global Active Power (kilowatts)" ))  # Use defaults where appropriate

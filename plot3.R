@@ -36,7 +36,7 @@ convertedSelectedData <- tblSelectedData %>%
         select(-Date, -Time)    # zap Date and Time columns now
 
 
-png(file="plot3.png", height=480, width=480, units="px")   # set up device and plot
+png(file="plot3.png", height=480, width=480, units="px", bg="transparent")   # set up device and plot
 
 plot(convertedSelectedData$datetime, convertedSelectedData$Sub_metering_1, type="n",
      xlab="", ylab="Energy sub metering" ) # Set up plot without plotting, use defaults where appropriate
